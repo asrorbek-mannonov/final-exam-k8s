@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: busybox-echo
+  name: busybox-echo
+  namespace: asrorbek
+spec:
+  containers:
+  - command:
+    - echo
+    - The BEST DevOps COURSE!!!
+    image: busybox
+    name: busybox-echo
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}

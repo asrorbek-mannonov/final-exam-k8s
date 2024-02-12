@@ -1,0 +1,6 @@
+NAME                               READY   STATUS             RESTARTS      AGE
+busybox-echo                       0/1     CrashLoopBackOff   5 (56s ago)   3m54s
+flask-application-d9fbdbd5-5ncn5   1/1     Running            0             14s
+flask-application-d9fbdbd5-r5jgl   1/1     Running            0             14s
+nginx1                             1/1     Running            0             6m15s
+nginx2                             1/1     Running            0             5m44s

@@ -1,0 +1,39 @@
+NAMESPACE         NAME                                 ENDPOINTS                                                                 AGE
+abdulaziz         final-exam                           10.233.67.176:5000                                                        3m48s
+admin             flask-application                    <none>                                                                    12d
+admin             nginx                                <none>                                                                    2d
+admin             nginx-nodeport                       <none>                                                                    2d
+admin             pod-test                             <none>                                                                    9d
+admin             something                            <none>                                                                    12d
+asilbek           final-exam                           10.233.67.86:5000                                                         28m
+asilbek           final-exam-cluster-ip                10.233.67.86:5000                                                         25m
+asrorbek          final-exam                           10.233.68.122:5000                                                        52m
+asrorbek          final-exam-np                        10.233.68.122:5000                                                        54m
+asrorbek          frontend-something                   10.233.66.97:80                                                           27m
+azizbek           final-exam                           10.233.67.155:5000                                                        16m
+cert-manager      cert-manager                         10.233.68.19:9402                                                         11d
+cert-manager      cert-manager-webhook                 10.233.67.19:10250                                                        11d
+default           flask-application                                                                                              8d
+default           kubelet                              95.217.6.174:10250,65.109.14.160:10250,65.109.139.39:10250 + 15 more...   9d
+default           kubernetes                           37.27.21.226:6443                                                         13d
+default           suricata-service                                                                                               5d2h
+ingress-nginx     ingress-nginx-controller             10.233.65.27:443,10.233.66.212:443,10.233.67.95:443 + 7 more...           2d1h
+ingress-nginx     ingress-nginx-controller-admission   10.233.65.27:8443,10.233.66.212:8443,10.233.67.95:8443 + 2 more...        2d1h
+kube-system       coredns                              10.233.64.3:53,10.233.65.2:53,10.233.64.3:53 + 3 more...                  13d
+kube-system       metrics-server                       10.233.64.5:10250                                                         13d
+kube-system       registry                             10.233.66.2:5000                                                          13d
+longhorn-system   csi-attacher                         10.233.66.51:12345,10.233.68.50:12345,10.233.69.76:12345                  9d
+longhorn-system   csi-provisioner                      10.233.65.57:12345,10.233.66.52:12345,10.233.69.77:12345                  9d
+longhorn-system   csi-resizer                          10.233.65.58:12345,10.233.66.53:12345,10.233.67.53:12345                  9d
+longhorn-system   csi-snapshotter                      10.233.65.59:12345,10.233.68.51:12345,10.233.69.78:12345                  9d
+longhorn-system   longhorn-admission-webhook           10.233.65.49:9502,10.233.66.43:9502,10.233.67.46:9502 + 2 more...         9d
+longhorn-system   longhorn-backend                     10.233.65.49:9500,10.233.66.43:9500,10.233.67.46:9500 + 2 more...         9d
+longhorn-system   longhorn-conversion-webhook          10.233.65.49:9501,10.233.66.43:9501,10.233.67.46:9501 + 2 more...         9d
+longhorn-system   longhorn-engine-manager              <none>                                                                    9d
+longhorn-system   longhorn-frontend                    10.233.67.52:8000                                                         9d
+longhorn-system   longhorn-recovery-backend            10.233.65.49:9503,10.233.66.43:9503,10.233.67.46:9503 + 2 more...         9d
+longhorn-system   longhorn-replica-manager             <none>                                                                    9d
+negmatov          final-exam                           10.233.68.168:5000                                                        6m49s
+sirojiddin        final-exam                           10.233.67.162:5000                                                        4m20s
+sodikmirzo        final-exam                           10.233.67.167:5000                                                        10m
+ss                nginx                                10.233.68.22:80                                                           99m

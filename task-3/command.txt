@@ -1,0 +1,1 @@
+kubectl -n asrorbek logs busybox-echo

@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: final-exam-host
+  name: final-exam-host
+  namespace: asrorbek
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: final-exam-host
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: final-exam-host
+    spec:
+      containers:
+      - image: nvrbckdown/flask-app:final-exam
+        name: flask-app
+        resources: {}
+        volumeMounts:
+          - name: my-vol1
+            mountPath: /mnt
+      volumes:
+      - name: my-vol1 
+        hostPath:
+          path: /mnt 
+status: {}

@@ -1,0 +1,33 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  creationTimestamp: null
+  name: node-printer
+  namespace: asrorbek
+spec:
+  jobTemplate:
+    metadata:
+      creationTimestamp: null
+      name: node-printer
+    spec:
+      completions: 10
+      parallelism: 5
+      template:
+        metadata:
+          creationTimestamp: null
+        spec:
+          containers:
+          - image: nginx
+            name: node-printer
+            command:
+              - "/bin/sh"
+              - "-c"
+              - "echo $NODE"
+            env:
+            - name: NODE
+              valueFrom:
+                fieldRef:
+                  fieldPath: spec.nodeName
+          restartPolicy: OnFailure
+  schedule: '*/2 * * * *'
+status: {}

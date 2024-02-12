@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: frontend-something-affinity
+  name: frontend-something-affinity
+  namespace: asrorbek
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend-something-affinity
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: frontend-something-affinity
+    spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: final
+                operator: In
+                values:
+                - "exam"
+      containers:
+      - image: nvrbckdown/something
+        name: something
+        resources: {}
+status: {}

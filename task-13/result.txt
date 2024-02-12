@@ -1,0 +1,6 @@
+master-node1=[{"effect":"NoSchedule","key":"node-role.kubernetes.io/control-plane"}] 
+node1=[{"effect":"NoSchedule","key":"bank","value":"brb"}] 
+node2= 
+node3= 
+node4= 
+node5=[{"effect":"NoSchedule","key":"uacademy","value":"proxima-devops"}] 

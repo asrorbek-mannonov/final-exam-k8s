@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+  creationTimestamp: null
+  name: frontend-something-ing
+  namespace: asrorbek
+spec:
+  tls:
+    - hosts:
+      - asrorbek-front.nvrbckdown.uz
+      secretName: k8s-tls
+  ingressClassName: nginx
+  rules:
+  - host: asrorbek-front.nvrbckdown.uz
+    http:
+      paths:
+      - backend:
+          service:
+            name: frontend-something
+            port:
+              number: 80
+        path: /
+        pathType: Prefix

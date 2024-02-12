@@ -1,0 +1,9 @@
+apiVersion: v1
+data:
+  AUTHOR: Asrorbek
+  EXAM_TYPE: Final Exam
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: config-info
+  namespace: asrorbek

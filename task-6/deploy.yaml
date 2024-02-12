@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: final-exam
+  name: final-exam
+  namespace: asrorbek
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: final-exam
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: final-exam
+    spec:
+      containers:
+      - image: nvrbckdown/flask-app:final-exam
+        name: flask-app
+        env:
+        - name: AUTHOR
+          value: Asrorbek
+        - name: POD
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
+        - name: NODE
+          valueFrom:
+            fieldRef:
+              fieldPath: spec.nodeName

@@ -1,0 +1,1 @@
+kubectl api-resources | grep longhorn.io/v1beta2 | awk '{print $2}'
